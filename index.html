@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="header">
+    <h1>🎬 Movie Search App</h1>
+    <div class="profile">
+      <button id="themeToggle" title="Toggle Theme">🌙</button>
+      <img src="https://i.pravatar.cc/40?img=3" alt="Profile" />
+      <span>Varsha</span>
+    </div>
+  </div>
+
+ 
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search for movies..." />
+    <button id="searchBtn">Search</button>
+  </div>
+
+ 
+  <div id="moviesContainer"></div>
+
+ 
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
